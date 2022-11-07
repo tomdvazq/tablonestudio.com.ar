@@ -5,10 +5,9 @@
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 100%;
+        @include start;
     }
 }
 

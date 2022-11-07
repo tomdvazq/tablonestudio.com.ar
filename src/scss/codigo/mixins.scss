@@ -1,0 +1,26 @@
+@mixin center($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin space-between($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin background($url){
+    background: center fixed url('../../' + $url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

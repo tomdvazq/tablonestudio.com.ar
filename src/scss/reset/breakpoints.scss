@@ -8,7 +8,7 @@ $breakpoints: ('small': (min-width: 576px),
 
 // Función para llamar vía @include respond-to('breakpoint') //
 
-@mixin respond-to($breakpoint) {
+@mixin media($breakpoint) {
     $raw-query: map-get($breakpoints, $breakpoint);
 
     @if $raw-query {
