@@ -20,7 +20,7 @@
 }
 
 @mixin background($url){
-    background: center fixed url('../../' + $url);
+    background: center fixed url('../../public/images/design/backgrounds/' + $url);
     background-repeat: no-repeat;
     background-size: cover;
 }
