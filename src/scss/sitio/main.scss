@@ -1,12 +1,18 @@
 main {
-    @include start;
+    width: 100%;
 
-    #elTablon {
-
-    }
-    
     #servicios{
-
+        height: 100vh;
+        @include background('background-services.jpg');
+        @include center(column);
+        @include media('large'){
+            padding: 20px;
+            align-items: flex-start;
+            justify-content: space-evenly
+        };
+        @import 'main/services/content.scss';
+        @import 'main/services/cards.scss';
+        @import 'main/services/swiper-js.scss';
     }
 
     #portafolio{

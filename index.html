@@ -18,8 +18,8 @@
 
 <body>
     <div class="container">
-        <header>
-            <div class="menu">
+        <header id="up">
+            <div class="menu" id="header">
                 <div class="branding">
                     <img src="public/images/design/logo/tablon-estudio.png" alt="" class="logo">
                 </div>
@@ -27,22 +27,162 @@
                     <input type="checkbox" name="" id="menu">
                     <label for="menu" id="labelMenu"><i class="fa-solid fa-bars"></i></label>
                     <ul id="navContainer">
-                        <li><a class="navElement" href="#">El Tablón</a></li>
-                        <li><a class="navElement" href="#">Servicios</a></li>
+                        <li><a class="navElement" href="#up">El Tablón</a></li>
+                        <li><a class="navElement" href="#servicios">Servicios</a></li>
                         <li><a class="navElement" href="#">Portafolio</a></li>
                         <li><a class="navElement" href="#">Comunidad</a></li>
                         <li><a class="navElement" href="#">Contacto</a></li>
-                        <li><a class="navElement"href="#">Beat Market</a></li>
+                        <li><a class="navElement" href="#">Beat Market</a></li>
                     </ul>
                 </nav>
             </div>
             <div id="elTablon">
-                <h2>Hola</h2>
+                <div class="content">
+                    <div class="title">
+                        Bienvenidxs al Tablón
+                    </div>
+                    <div class="data">
+                        Somos un <h1>estudio de producción musical</h1>, <h2>mezcla</h2> y <h2>mastering</h2> para <h3>
+                            músicxs y bandas</h3>.
+                        Nuestro objetivo es llegar a los mejores resultados musicales y sonoros. <b>Nos diferenciamos
+                            por nuestra huella sonora, siempre priorizando la obra del artista.</b>
+                        Elegimos trabajar con <h3>artistas</h3> que estén realmente comprometidos con su obra y nos
+                        elijan por nuestros resultados.
+                        Llevamos tus obras a un nivel superior.
+                    </div>
+                    <div class="links">
+                        <a href="#servicios">Conocé nuestros servicios</a>
+                    </div>
+                </div>
+                <div class="graphic">
+                    <img src="public/images/design/logo/logo-tablon.png" alt="tablon estudio">
+                </div>
             </div>
         </header>
 
         <main>
-            <section id="servicios"></section>
+            <section id="servicios">
+                <div class="content">
+                    <div class="text">
+                        <div class="title">
+                            <h2>Nuestros servicios</h2>
+                        </div>
+                        <div class="data">
+                            Podemos trabajar de manera presencial o a distancia. No importa en qué parte del mundo te encuentres.
+                            Trabajamos con proyectos solistas y con bandas. Tambien podemos diseñar un plan que se adapte a tu proyecto.
+                        </div>
+                    </div>
+                    <div class="graphic">
+                        <img src="public/images/pictures/icons/studio-mixer.png" alt="estudio de producción musical en buenos aires">
+                    </div>
+                </div>
+                <!-- Swiper for Mobile -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service">
+                                <div class="title">
+                                    <h2>Producción</h2>
+                                </div>
+                                <div class="content">
+                                    Incluye <h3>beat personalizado</h3>, acompañamiento en el proceso de <h3>composición</h3> y <h3>produccion</h3> antes de la <h3>grabación</h3>. 
+                                    Te ayudamos a llevar a cabo tu <h3>cancion</h3> desde la primera idea.
+                                    El <h3>estudio</h3> ofrece un entorno de gran comodidad y brinda
+                                    seguridad al <h3>artista</h3> para dar su 100% al momento de trabajar
+                                    en su obra.
+                                    Contamos con variedad de <h3>intrumentos acusticos</h3> y electronicos, 
+                                    para el momento de la <h3>produccion  y preproduccion</h3>.
+                                </div>
+                                <a href="#" class="whatsapp">Contacto</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service">
+                                <div class="title">
+                                    <h2>Grabación</h2>
+                                </div>
+                                <div class="content">
+                                    Una vez finalizada la producción de la <h3>canción</h3>, te acompañamos durante el proceso de grabación para lograr las mejores tomas posibles con los estándares de calidad adecuados para que tu canción se luzca. 
+                                    Contamos con una sala acusticamente tratada y buena calidad de preamplificacion para obtener tomas claras y definidas.
+                                </div>
+                                <a href="#" class="whatsapp">Contacto</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service">
+                                <div class="title">
+                                    <h2>Mezcla</h2>
+                                </div>
+                                <div class="content">
+                                    Una vez producida y grabada la canción, llega el momento de hacer que suene como imaginas. Tenemos la experiencia y las herramientas necesarias para llegar al resultado que estás buscando. 
+                                    Utilizamos variedad de equipos y programas, logrando dinamismo a lo largo de las producciones, bajo estándares de calidad y profesionalismo para poder llevar tus proyectos al máximo nivel.
+                                </div>
+                                <a href="#" class="whatsapp">Contacto</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service">
+                                <div class="title">
+                                    <h2>Mastering</h2>
+                                </div>
+                                <div class="content">
+                                    Finalizado todo el proceso y con la canción sonando como buscabas y como la canción lo pide, nos aseguramos de tener un control de calidad final con nuestro sistema de monitoreo de alta gamma para que se transfiera bien a todos los formatos, dispositivos y <h3>plataformas de reproducción</h3>.
+                                </div>
+                                <a href="#" class="whatsapp">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Cards for desktop -->
+                <div class="cardsDesktop">
+                    <div class="service">
+                        <div class="title">
+                            <h2>Producción</h2>
+                        </div>
+                        <div class="content">
+                            Incluye <h3>beat personalizado</h3>, acompañamiento en el proceso de <h3>composición</h3> y <h3>produccion</h3> antes de la <h3>grabación</h3>. 
+                            Te ayudamos a llevar a cabo tu <h3>cancion</h3> desde la primera idea.
+                            El <h3>estudio</h3> ofrece un entorno de gran comodidad y brinda
+                            seguridad al <h3>artista</h3> para dar su 100% al momento de trabajar
+                            en su obra.
+                            Contamos con variedad de <h3>intrumentos acusticos</h3> y electronicos, 
+                            para el momento de la <h3>produccion  y preproduccion</h3>.
+                        </div>
+                        <a href="#" class="whatsapp">Contacto</a>
+                    </div>
+                    <div class="service">
+                        <div class="title">
+                            <h2>Grabación</h2>
+                        </div>
+                        <div class="content">
+                            Una vez finalizada la producción de la <h3>canción</h3>, te acompañamos durante el proceso de grabación para lograr las mejores tomas posibles con los estándares de calidad adecuados para que tu canción se luzca. 
+                            Contamos con una sala acusticamente tratada y buena calidad de preamplificacion para obtener tomas claras y definidas.
+                        </div>
+                        <a href="#" class="whatsapp">Contacto</a>
+                    </div>
+                    <div class="service">
+                        <div class="title">
+                            <h2>Mezcla</h2>
+                        </div>
+                        <div class="content">
+                            Una vez producida y grabada la canción, llega el momento de hacer que suene como imaginas. Tenemos la experiencia y las herramientas necesarias para llegar al resultado que estás buscando. 
+                            Utilizamos variedad de equipos y programas, logrando dinamismo a lo largo de las producciones, bajo estándares de calidad y profesionalismo para poder llevar tus proyectos al máximo nivel.
+                        </div>
+                        <a href="#" class="whatsapp">Contacto</a>
+                    </div>
+                    <div class="service">
+                        <div class="title">
+                            <h2>Mastering</h2>
+                        </div>
+                        <div class="content">
+                            Finalizado todo el proceso y con la canción sonando como buscabas y como la canción lo pide, nos aseguramos de tener un control de calidad final con nuestro sistema de monitoreo de alta gamma para que se transfiera bien a todos los formatos, dispositivos y <h3>plataformas de reproducción</h3>.
+                        </div>
+                        <a href="#" class="whatsapp">Contacto</a>
+                    </div>
+                </div>
+            </section>
             <section id="portafolio"></section>
             <section id="comunidad"></section>
             <section id="contacto"></section>
@@ -55,7 +195,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="src/js/modules/libraries/scrollreveal.js"></script>
-    <script src="src/js/app.js"></script>
+    <script type="module" src="src/js/app.js"></script>
 </body>
 
 </html>

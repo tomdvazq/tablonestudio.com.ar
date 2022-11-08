@@ -4,6 +4,7 @@ $breakpoints: ('small': (min-width: 576px),
     'medium': (min-width: 768px),
     'large': (min-width: 992px),
     'huge': (min-width: 1200px),
+    'xl': (min-width: 1400px)
 );
 
 // Función para llamar vía @include respond-to('breakpoint') //

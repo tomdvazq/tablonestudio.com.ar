@@ -1,10 +1,29 @@
-function openNav(){
-    let menu = document.getElementById('labelMenu');
-    let navLinks = document.getElementById('navContainer');
-
-    menu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    })
-}
+import{openNav} from '../js/modules/site/home/navbar.js';
+import{windowScroll} from '../js/modules/site/home/navbar.js';
 
 openNav();
+windowScroll();
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1100: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+    },
+});
