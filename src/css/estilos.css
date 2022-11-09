@@ -185,13 +185,17 @@ header {
           order: 2;
           display: block; } }
       header #elTablon .graphic img {
-        filter: drop-shadow(0px 4px #090041); }
+        animation: logo 10s infinite; }
         @media (min-width: 576px) {
           header #elTablon .graphic img {
             width: 400px;
-            height: 500px; } }
+            height: 500px;
+            position: relative;
+            right: 100px; } }
         @media (min-width: 1400px) {
           header #elTablon .graphic img {
+            position: relative;
+            right: 100px;
             width: 500px;
             height: 600px; } }
 
@@ -432,3 +436,216 @@ main {
         z-index: 88888; }
       main #servicios .swiper .swiper-pagination-bullet {
         background-color: #e9791a; }
+  main #portafolio {
+    height: 1200px;
+    background: center fixed url("../../public/images/design/backgrounds/background-portfolio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 768px) {
+      main #portafolio {
+        height: 100vh; } }
+    @media (min-width: 992px) {
+      main #portafolio {
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: space-evenly; } }
+    main #portafolio .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%; }
+      @media (min-width: 992px) {
+        main #portafolio .content {
+          flex-direction: row; } }
+      main #portafolio .content .text {
+        order: 2;
+        text-align: center;
+        padding: 5px; }
+        @media (min-width: 992px) {
+          main #portafolio .content .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: start;
+            width: 400px; } }
+        main #portafolio .content .text .title h2 {
+          font-weight: bold;
+          font-size: 4rem; }
+          @media (min-width: 576px) {
+            main #portafolio .content .text .title h2 {
+              font-size: 4.5rem; } }
+          @media (min-width: 992px) {
+            main #portafolio .content .text .title h2 {
+              font-size: 5rem; } }
+          @media (min-width: 1200px) {
+            main #portafolio .content .text .title h2 {
+              font-size: 6rem; } }
+        main #portafolio .content .text .data {
+          font-size: 1.7rem;
+          line-height: 2rem;
+          font-weight: 400;
+          display: inline; }
+          @media (min-width: 992px) {
+            main #portafolio .content .text .data {
+              font-size: 1.8rem;
+              line-height: 25px; } }
+          @media (min-width: 1200px) {
+            main #portafolio .content .text .data {
+              font-size: 2rem; } }
+          main #portafolio .content .text .data h1, main #portafolio .content .text .data h2, main #portafolio .content .text .data h3 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            display: inline-block; }
+            @media (min-width: 992px) {
+              main #portafolio .content .text .data h1, main #portafolio .content .text .data h2, main #portafolio .content .text .data h3 {
+                font-size: 2rem; } }
+            @media (min-width: 1200px) {
+              main #portafolio .content .text .data h1, main #portafolio .content .text .data h2, main #portafolio .content .text .data h3 {
+                font-size: 2rem; } }
+      main #portafolio .content .graphic {
+        order: 1; }
+        @media (min-width: 992px) {
+          main #portafolio .content .graphic {
+            order: 1; } }
+        main #portafolio .content .graphic img {
+          width: 64px;
+          height: 64px;
+          filter: invert(100%); }
+          @media (min-width: 992px) {
+            main #portafolio .content .graphic img {
+              width: auto;
+              height: auto; } }
+    main #portafolio .swiper {
+      width: 100%;
+      position: relative;
+      top: 40px; }
+      main #portafolio .swiper .swiper-wrapper .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+        main #portafolio .swiper .swiper-wrapper .swiper-slide .artist {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+          width: 100%; }
+          @media (min-width: 768px) {
+            main #portafolio .swiper .swiper-wrapper .swiper-slide .artist {
+              flex-direction: row; } }
+          main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card {
+            width: 320px;
+            height: 400px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            color: white; }
+            main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+              border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+              background-size: cover;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              background: center fixed url("../../public/images/design/backgrounds/background-cards.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka picture {
+                border-right: solid 1px rgba(255, 255, 255, 0.5);
+                padding: 10px 20px; }
+                main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka picture img {
+                  width: 60px;
+                  height: 60px;
+                  border-radius: 50%;
+                  animation: float 5s infinite;
+                  border-right: solid 1px rgba(255, 255, 255, 0.5); }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka h2 {
+                font-size: 2.4rem;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center; }
+            main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .content {
+              width: 100%;
+              text-align: center;
+              padding: 20px;
+              font-size: 1.6rem;
+              line-height: 2.2rem;
+              display: inline-block; }
+            main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .social {
+              border-top: solid 1px rgba(255, 255, 255, 0.1);
+              display: flex;
+              align-items: center;
+              height: 60px;
+              justify-content: space-evenly;
+              background-color: rgba(0, 0, 0, 0.5); }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .social a {
+                font-size: 2.5rem;
+                color: white; }
+          main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .song iframe {
+            width: 320px;
+            height: 400px;
+            margin: 20px 0px;
+            border: solid 1px white; }
+            @media (min-width: 992px) {
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .song iframe {
+                margin: 0;
+                width: 500px;
+                height: 400px; } }
+            @media (min-width: 1200px) {
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .song iframe {
+                width: 600px;
+                height: 400px; } }
+      main #portafolio .swiper .swiper-button-next,
+      main #portafolio .swiper .swiper-button-prev {
+        color: #e9791a; }
+      main #portafolio .swiper .swiper-pagination {
+        position: absolute;
+        border: solid 1px red;
+        bottom: -10px;
+        z-index: 88888; }
+      main #portafolio .swiper .swiper-pagination-bullet {
+        background-color: #e9791a; }
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-15deg);
+    filter: drop-shadow(0px 10px #090041); }
+  100% {
+    transform: rotate(0deg);
+    filter: drop-shadow(0px 0px #090041); } }
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(5px); }
+  50% {
+    box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-5px); }
+  100% {
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(5px); } }

@@ -1,0 +1,80 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include media('large'){
+        flex-direction: row;
+    }
+    .text{
+        order: 2;
+        text-align: center;
+        padding: 5px;
+
+        @include media('large'){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: start;
+            width: 400px;
+        }
+        .title{
+            h2{
+                font-weight: bold;
+                font-size: 4rem;
+                @include media('small'){
+                    font-size: 4.5rem;
+                }
+                @include media('large'){
+                    font-size: 5rem;
+                }
+                @include media('huge'){
+                    font-size: 6rem;
+                }
+            }
+        }
+        .data{
+            font-size: 1.7rem;
+            line-height: 2rem;
+            font-weight: 400;
+            display: inline;
+            @include media('large'){
+                font-size: 1.8rem;
+                line-height: 25px;
+            }
+            @include media('huge'){
+                font-size: 2rem;
+            }
+                h1, h2, h3{
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                    display: inline-block;
+                    @include media('large'){
+                        font-size: 2rem;
+                    }
+                    @include media('huge'){
+                        font-size: 2rem;
+                    }
+                }
+        }
+    }
+
+    .graphic{
+        order: 1;
+        @include media('large'){
+            order: 1;
+        }
+        img{
+            width: 64px;
+            height: 64px;
+            filter: invert(100%);
+            @include media('large'){
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,8 +1,7 @@
-import{openNav} from '../js/modules/site/home/navbar.js';
-import{windowScroll} from '../js/modules/site/home/navbar.js';
+import{openNav} from '../js/modules/site/home/navbar.js'; /* Execute */ openNav();
+import{windowScroll} from '../js/modules/site/home/navbar.js'; /* Execute */ windowScroll();
 
-openNav();
-windowScroll();
+
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -25,5 +24,19 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 10,
         },
+    },
+});
+
+var swiper = new Swiper(".artistSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });

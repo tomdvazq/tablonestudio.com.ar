@@ -16,7 +16,19 @@ main {
     }
 
     #portafolio{
-
+        height: 1200px;
+        @include media('medium'){
+            height: 100vh;
+        }
+        @include background('background-portfolio.jpg');
+        @include center(column);
+        @include media('large'){
+            padding: 20px;
+            align-items: flex-start;
+            justify-content: space-evenly
+        };
+        @import 'main/portfolio/content.scss';
+        @import 'main/portfolio/swiper-js.scss';
     }
 
     #comunidad{
