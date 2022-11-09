@@ -38,5 +38,6 @@ var swiper = new Swiper(".artistSwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+        clickable: false,
     },
 });

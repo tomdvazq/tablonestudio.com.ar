@@ -24,3 +24,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin backgroundArtist($url){
+    background: center fixed url('../../public/images/design/backgrounds/backgrounds-artists' + $url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
