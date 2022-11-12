@@ -569,13 +569,30 @@ main {
               border-top-right-radius: 5px;
               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
               main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.saje {
-                background: center fixed url("../../public/images/design/backgrounds/background-cards.jpg");
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/saje.jpg");
                 background-repeat: no-repeat;
                 background-size: cover; }
               main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.mangos {
-                background: center fixed url("../../public/images/design/backgrounds/background-portfolio.jpg");
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/mangos.jpg");
                 background-repeat: no-repeat;
                 background-size: cover; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.bmc {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/bmc.jpg");
+                background-repeat: no-repeat;
+                background-size: cover; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.lasta {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/lasta.jpg");
+                background-repeat: no-repeat;
+                background-size: cover; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.oriental {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/oriental.jpg");
+                background-repeat: no-repeat;
+                background-size: cover; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.nfsc img.nofun {
+                width: 50px;
+                height: 60px;
+                position: absolute;
+                top: -30px; }
               main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka picture {
                 border-right: solid 1px rgba(255, 255, 255, 0.2);
                 padding: 10px 20px; }
