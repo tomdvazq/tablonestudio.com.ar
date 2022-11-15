@@ -70,6 +70,29 @@
                                                 position: absolute;
                                             }
                                         }
+                                        &.stepa{
+                                            @include backgroundArtist('stepa.jpg');
+                                            background-position-y: -110px;
+                                        }
+                                        &.cino{
+                                            @include backgroundArtist('cino.jpg');
+                                            background-position-y: -80px;
+                                        }
+                                        &.lisa{
+                                            @include backgroundArtist('lisa.jpg');
+                                            background-position-y: -80px;
+                                        }
+                                        &.broyer{
+                                            @include backgroundArtist('broyer.jpg');
+                                            background-position-y: -80px;
+                                        }
+                                        &.kloster{
+                                            @include backgroundArtist('kloster.jpg');
+                                            background-position-y: -60px;
+                                        }
+                                        &.simbiosis{
+                                            @include backgroundArtist('simbiosis.jpg');
+                                        }
                                         picture{
                                             border-right: solid 1px rgba(255, 255, 255, .2);
                                             padding: 10px 20px;

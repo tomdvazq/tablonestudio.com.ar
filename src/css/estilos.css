@@ -592,6 +592,35 @@ main {
                 width: 50px;
                 height: 60px;
                 position: absolute; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.stepa {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/stepa.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: -110px; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.cino {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/cino.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: -80px; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.lisa {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/lisa.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: -80px; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.broyer {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/broyer.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: -80px; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.kloster {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/kloster.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: -60px; }
+              main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.simbiosis {
+                background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/simbiosis.jpg");
+                background-repeat: no-repeat;
+                background-size: cover; }
               main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka picture {
                 border-right: solid 1px rgba(255, 255, 255, 0.2);
                 padding: 10px 20px; }
