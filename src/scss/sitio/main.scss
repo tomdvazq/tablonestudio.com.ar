@@ -31,15 +31,19 @@ main {
         @import 'main/portfolio/swiper-js.scss';
     }
 
-    #contacto{
-        height: 100vh;
-        @include background('background-comunity.jpg');
-        @include space-between(column);
-        @include media('large'){
-            @include space-between(row);
+    #comunidad{
+        height: 1200px;
+        @include media('medium'){
+            height: 100vh;
         }
-        @import 'main/contact/comunityAd.scss';
-        @import 'main/contact/contacto.scss';
-    
+        @include background('background-community.jpg');
+        @include center(column);
+        @include media('large'){
+            padding: 20px;
+            align-items: flex-start;
+            justify-content: space-evenly
+        };
+        @import 'main/community/content.scss';
+        @import 'main/community/community.scss';
     }
 }

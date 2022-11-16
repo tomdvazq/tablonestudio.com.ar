@@ -12,7 +12,7 @@ header {
         height: 100px;
         position: fixed;
         z-index: 99999;
-        padding: 40px;
+        padding: 60px;
         background-color: transparent;
         transition: all 1s ease;
         @include space-between(row);
@@ -20,7 +20,7 @@ header {
             // Ver navegación al hacer click en el mobile menú
             &.active{
                 background-color: rgba(0, 0, 0, .5);
-                padding: 20px;
+                padding: 40px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 15px 0px;
             }
 

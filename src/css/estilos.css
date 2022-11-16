@@ -17,6 +17,15 @@ body {
 html {
   font-size: 62.5%; }
 
+body::-webkit-scrollbar {
+  width: 8px; }
+
+body::-webkit-scrollbar-track {
+  background: transparent; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e9791a; }
+
 header {
   background: center fixed url("../../public/images/design/backgrounds/background-header.jpg");
   background-repeat: no-repeat;
@@ -32,7 +41,7 @@ header {
     height: 100px;
     position: fixed;
     z-index: 99999;
-    padding: 40px;
+    padding: 60px;
     background-color: transparent;
     transition: all 1s ease;
     display: flex;
@@ -41,7 +50,7 @@ header {
     align-items: center; }
     header .menu.active {
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
+      padding: 40px;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 15px 0px; }
     header .menu .branding {
       color: white; }
@@ -696,21 +705,87 @@ main {
         color: #e9791a; }
       main #portafolio .swiper .swiper-pagination-bullet {
         background-color: #e9791a; }
-  main #contacto {
-    height: 100vh;
-    background: center fixed url("../../public/images/design/backgrounds/background-comunity.jpg");
+  main #comunidad {
+    height: 1200px;
+    background: center fixed url("../../public/images/design/backgrounds/background-community.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
+    @media (min-width: 768px) {
+      main #comunidad {
+        height: 100vh; } }
     @media (min-width: 992px) {
-      main #contacto {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; } }
+      main #comunidad {
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: space-evenly; } }
+    main #comunidad .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%; }
+      @media (min-width: 992px) {
+        main #comunidad .content {
+          flex-direction: column; } }
+      main #comunidad .content .text {
+        order: 2;
+        text-align: center;
+        padding: 5px;
+        width: auto; }
+        @media (min-width: 576px) {
+          main #comunidad .content .text {
+            width: 500px; } }
+        main #comunidad .content .text .title h2 {
+          font-weight: bold;
+          font-size: 4rem; }
+          @media (min-width: 576px) {
+            main #comunidad .content .text .title h2 {
+              font-size: 4.5rem; } }
+          @media (min-width: 992px) {
+            main #comunidad .content .text .title h2 {
+              font-size: 5rem; } }
+          @media (min-width: 1200px) {
+            main #comunidad .content .text .title h2 {
+              font-size: 6rem; } }
+        main #comunidad .content .text .data {
+          font-size: 1.7rem;
+          line-height: 2rem;
+          font-weight: 400;
+          display: inline; }
+          @media (min-width: 992px) {
+            main #comunidad .content .text .data {
+              font-size: 1.8rem;
+              line-height: 25px; } }
+          @media (min-width: 1200px) {
+            main #comunidad .content .text .data {
+              font-size: 2rem; } }
+          main #comunidad .content .text .data h1, main #comunidad .content .text .data h2, main #comunidad .content .text .data h3 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            display: inline-block; }
+            @media (min-width: 992px) {
+              main #comunidad .content .text .data h1, main #comunidad .content .text .data h2, main #comunidad .content .text .data h3 {
+                font-size: 2rem; } }
+            @media (min-width: 1200px) {
+              main #comunidad .content .text .data h1, main #comunidad .content .text .data h2, main #comunidad .content .text .data h3 {
+                font-size: 2rem; } }
+      main #comunidad .content .graphic {
+        order: 1; }
+        @media (min-width: 992px) {
+          main #comunidad .content .graphic {
+            order: 1; } }
+        main #comunidad .content .graphic img {
+          width: 64px;
+          height: 64px;
+          filter: invert(100%); }
+          @media (min-width: 992px) {
+            main #comunidad .content .graphic img {
+              width: auto;
+              height: auto; } }
 
 @keyframes logo {
   0% {
