@@ -66,8 +66,19 @@
                                         &.nfsc{
                                             img.nofun{
                                                 width: 50px;
-                                                height: 60px;
-                                                position: absolute;
+                                                height: 50px;
+                                                position: relative;
+                                                right: 10px;
+                                                background-color: black;
+                                                border-radius: 100%;
+                                                padding: 5px;
+                                                box-shadow: rgba(0, 170, 14, 0.35) 0px 5px 15px;
+                                                animation: nofun 5s infinite;
+                                                transition: all .5s ease;
+                                                cursor: pointer;
+                                                &:hover{
+                                                    animation: nofunFloat 3s infinite;
+                                                }
                                             }
                                         }
                                         &.stepa{
@@ -162,7 +173,7 @@
                                     width: 320px;
                                     height: 400px;
                                     margin: 20px 0px;
-                                    border: solid 1px rgba(255, 255, 255, 1);
+                                    border: solid 1px rgba(255, 255, 255, .2);
                                     @include media('large'){
                                         margin: 0;
                                         width: 500px;
@@ -182,10 +193,7 @@
             color: $secundario;
         }
         .swiper-pagination{
-            position: absolute;
-            border: solid 1px red;
-            bottom: -10px;
-            z-index: 88888;
+
         }
         .swiper-pagination-bullet{
             background-color: $secundario;

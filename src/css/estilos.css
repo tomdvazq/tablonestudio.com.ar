@@ -590,8 +590,18 @@ main {
                 background-size: cover; }
               main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.nfsc img.nofun {
                 width: 50px;
-                height: 60px;
-                position: absolute; }
+                height: 50px;
+                position: relative;
+                right: 10px;
+                background-color: black;
+                border-radius: 100%;
+                padding: 5px;
+                box-shadow: rgba(0, 170, 14, 0.35) 0px 5px 15px;
+                animation: nofun 5s infinite;
+                transition: all .5s ease;
+                cursor: pointer; }
+                main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.nfsc img.nofun:hover {
+                  animation: nofunFloat 3s infinite; }
               main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .card .aka.stepa {
                 background: center fixed url("../../public/images/design/backgrounds/backgrounds-artists/stepa.jpg");
                 background-repeat: no-repeat;
@@ -671,7 +681,7 @@ main {
             width: 320px;
             height: 400px;
             margin: 20px 0px;
-            border: solid 1px white; }
+            border: solid 1px rgba(255, 255, 255, 0.2); }
             @media (min-width: 992px) {
               main #portafolio .swiper .swiper-wrapper .swiper-slide .artist .song iframe {
                 margin: 0;
@@ -684,13 +694,23 @@ main {
       main #portafolio .swiper .swiper-button-next,
       main #portafolio .swiper .swiper-button-prev {
         color: #e9791a; }
-      main #portafolio .swiper .swiper-pagination {
-        position: absolute;
-        border: solid 1px red;
-        bottom: -10px;
-        z-index: 88888; }
       main #portafolio .swiper .swiper-pagination-bullet {
         background-color: #e9791a; }
+  main #contacto {
+    height: 100vh;
+    background: center fixed url("../../public/images/design/backgrounds/background-comunity.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    @media (min-width: 992px) {
+      main #contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; } }
 
 @keyframes logo {
   0% {
@@ -712,3 +732,22 @@ main {
   100% {
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(5px); } }
+
+@keyframes nofun {
+  0% {
+    box-shadow: rgba(0, 170, 14, 0.35) 0px 2px 4px 0px, rgba(0, 170, 14, 0.35) 0px 2px 16px 0px; }
+  50% {
+    box-shadow: rgba(0, 170, 14, 0) 0px 0px 0px 0px, rgba(0, 170, 14, 0) 0px 0px 0px 0px; }
+  100% {
+    box-shadow: rgba(0, 170, 14, 0.35) 0px 2px 4px 0px, rgba(0, 170, 14, 0.35) 0px 2px 16px 0px; } }
+
+@keyframes nofunFloat {
+  0% {
+    box-shadow: rgba(0, 170, 14, 0.35) 0px 2px 4px 0px, rgba(0, 170, 14, 0.35) 0px 2px 16px 0px;
+    transform: translatex(2px); }
+  50% {
+    box-shadow: rgba(0, 170, 14, 0) 0px 0px 0px 0px, rgba(0, 170, 14, 0) 0px 0px 0px 0px;
+    transform: translatex(-2px); }
+  100% {
+    box-shadow: rgba(0, 170, 14, 0.35) 0px 2px 4px 0px, rgba(0, 170, 14, 0.35) 0px 2px 16px 0px;
+    transform: translatex(2px); } }
