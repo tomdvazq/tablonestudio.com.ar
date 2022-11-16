@@ -200,7 +200,7 @@ header {
                     display: block;
                 }
                     img{
-                        animation: logo 10s infinite;
+                        animation: logo 10s 1;
                         @include media('small'){
                             width: 400px;
                             height: 500px;

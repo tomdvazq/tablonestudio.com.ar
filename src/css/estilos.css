@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -194,7 +195,7 @@ header {
           order: 2;
           display: block; } }
       header #elTablon .graphic img {
-        animation: logo 10s infinite; }
+        animation: logo 10s 1; }
         @media (min-width: 576px) {
           header #elTablon .graphic img {
             width: 400px;
@@ -706,7 +707,8 @@ main {
       main #portafolio .swiper .swiper-pagination-bullet {
         background-color: #e9791a; }
   main #comunidad {
-    height: 1200px;
+    height: 100%;
+    padding: 30px;
     background: center fixed url("../../public/images/design/backgrounds/background-community.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -714,7 +716,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       main #comunidad {
         height: 100vh; } }
     @media (min-width: 992px) {
@@ -786,6 +788,88 @@ main {
             main #comunidad .content .graphic img {
               width: auto;
               height: auto; } }
+    main #comunidad .community {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      @media (min-width: 768px) {
+        main #comunidad .community {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; } }
+      main #comunidad .community .communityCard {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width: 350px;
+        height: 300px;
+        margin: 20px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: solid 1px rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s ease; }
+        @media (min-width: 992px) {
+          main #comunidad .community .communityCard {
+            margin: 0px 20px; } }
+        main #comunidad .community .communityCard:hover {
+          transform: scale(1.05); }
+        main #comunidad .community .communityCard .type {
+          width: 100%;
+          height: 20%;
+          border: solid 1px rgba(255, 255, 255, 0.05);
+          border-top: none;
+          border-left: none;
+          border-top-left-radius: 30px;
+          background: #000443;
+          background: linear-gradient(37deg, #000443 0%, #4118b1 100%);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px; }
+          main #comunidad .community .communityCard .type.telegram {
+            background: #003743;
+            background: linear-gradient(37deg, #002043 0%, #189ab1 100%); }
+          main #comunidad .community .communityCard .type img {
+            width: 40px;
+            height: 40px;
+            filter: invert(100%); }
+          main #comunidad .community .communityCard .type h4 {
+            font-size: 3rem;
+            font-family: 'Pirata One';
+            font-weight: 400; }
+        main #comunidad .community .communityCard .description {
+          width: 100%;
+          height: 60%;
+          font-size: 1.5rem;
+          padding: 20px;
+          line-height: 20px;
+          text-align: center;
+          display: inline-block; }
+          main #comunidad .community .communityCard .description h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            display: inline; }
+        main #comunidad .community .communityCard .link {
+          width: 100%;
+          height: 20%;
+          border-top: solid 1px rgba(255, 255, 255, 0.05);
+          border-bottom-right-radius: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: burlywood; }
+          main #comunidad .community .communityCard .link a {
+            text-decoration: none;
+            color: black;
+            font-size: 2.1rem;
+            padding: 10px;
+            width: 100%;
+            text-align: center; }
 
 @keyframes logo {
   0% {

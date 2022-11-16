@@ -1,3 +1,87 @@
 .community{
-    
+    @include center(column);
+    @include media('medium'){
+        @include center(row);
+    }
+    width: 100%;
+        .communityCard{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            width: 350px;
+            height: 300px;
+            margin: 20px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border: solid 1px rgba(255, 255, 255, .1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .5s ease;
+            @include media('large'){
+                margin: 0px 20px;
+            }
+            &:hover{
+                transform: scale(1.05);
+            }
+                .type{
+                    width: 100%;
+                    height: 20%;
+                    border: solid 1px rgba(255, 255, 255, .05);
+                    border-top: none;
+                    border-left: none;
+                    border-top-left-radius: 30px;
+                    background: rgb(0,4,67);
+                    background: linear-gradient(37deg, rgba(0,4,67,1) 0%, rgb(65, 24, 177) 100%);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px;
+                    &.telegram{
+                        background: rgb(0, 55, 67);
+                        background: linear-gradient(37deg, rgb(0, 32, 67) 0%, rgb(24, 154, 177) 100%);
+                    }
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            filter: invert(100%);
+                        }
+                        h4{
+                            font-size: 3rem;
+                            font-family: 'Pirata One';
+                            font-weight: 400;
+                        }
+                }
+                .description{
+                    width: 100%;
+                    height: 60%;
+                    font-size: 1.5rem;
+                    padding: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    display: inline-block;
+                        h2{
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            display: inline;
+                        }
+                }
+                .link{
+                    width: 100%;
+                    height: 20%;
+                    border-top: solid 1px rgba(255, 255, 255, .05);
+                    border-bottom-right-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: burlywood;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 2.1rem;
+                            padding: 10px;
+                            width: 100%;
+                            text-align: center;
+                        }
+                }
+        }
 }

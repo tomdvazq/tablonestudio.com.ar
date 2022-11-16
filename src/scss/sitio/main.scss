@@ -32,8 +32,9 @@ main {
     }
 
     #comunidad{
-        height: 1200px;
-        @include media('medium'){
+        height: 100%;
+        padding: 30px;
+        @include media('large'){
             height: 100vh;
         }
         @include background('background-community.jpg');
