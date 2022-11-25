@@ -47,4 +47,21 @@ main {
         @import 'main/community/content.scss';
         @import 'main/community/community.scss';
     }
+
+    #contacto{
+        height: 800px;
+        @include media('large'){
+            height: 100vh;
+            padding: 0;
+        }
+        @include background('background-contacto.jpg');
+        @include center(column);
+        @include media('large'){
+            padding: 20px;
+            align-items: flex-start;
+            justify-content: center;
+        };
+        @import 'main/contact/content.scss';
+        @import 'main/contact/contact-ui.scss';
+    }
 }
