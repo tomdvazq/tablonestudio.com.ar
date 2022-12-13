@@ -15,10 +15,16 @@ header {
         padding: 60px;
         background-color: transparent;
         transition: all 1s ease;
-        @include space-between(row);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media('large'){
+            @include space-between(row);
+        }
 
             // Ver navegación al hacer click en el mobile menú
             &.active{
+                @include space-between(row);
                 background-color: rgba(0, 0, 0, .5);
                 padding: 40px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 15px 0px;
@@ -28,7 +34,6 @@ header {
             color: white;
     
             .logo {
-
             }
         }
     
@@ -67,12 +72,15 @@ header {
                     align-items: flex-start;
                     justify-content: flex-start;
                     position: absolute;
-                    padding: 100px 0px;
+                    padding: 0px;
                     left: 0;
                     top: 0;
                     height: 100vh;
                     width: 300px;
-                    background-color: rgba(0, 0, 0, 1);
+                    background-color: $principal;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border-right: solid 1px $secundario;
                 }
                 // < 992px (Navegación común)
                 @include media('large'){
@@ -101,6 +109,14 @@ header {
                                         color: $secundario;
                                     }
                             }
+                    }
+                    img{
+                        width: 300px;
+                        height: 100%;
+                        padding: 80px;
+                        @include media('large'){
+                            display: none;
+                        }
                     }
             }
         }
@@ -200,7 +216,6 @@ header {
                     display: block;
                 }
                     img{
-                        animation: logo 10s 1;
                         @include media('small'){
                             width: 400px;
                             height: 500px;

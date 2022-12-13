@@ -61,3 +61,17 @@
         transform: translatex(2px);
     }
 }
+
+@keyframes nofunFloat{
+    0% {
+        transform: translatex(2px);
+    }
+
+    50% {
+        transform: translatex(-2px);
+    }
+
+    100% {
+        transform: translatex(2px);
+    }
+}
