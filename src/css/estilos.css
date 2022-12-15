@@ -1208,4 +1208,47 @@ footer {
     transform: translatex(2px); } }
 
 .buildContainer {
-  border: solid 1px red; }
+  width: 100vw;
+  height: 100vh;
+  background: center url(../../public/images/design/backgrounds/background-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .buildContainer .building {
+    width: 350px;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.05) 0px 6px 24px 0px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px; }
+    .buildContainer .building img {
+      filter: invert(100%);
+      width: 64px;
+      height: 64px; }
+    .buildContainer .building h2 {
+      font-size: 2rem; }
+    .buildContainer .building .social {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.2rem; }
+      .buildContainer .building .social .media {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row; }
+        .buildContainer .building .social .media a {
+          color: white;
+          text-decoration: none;
+          font-size: 2.2rem;
+          margin: 0px 10px; }
+    .buildContainer .building .backSite {
+      margin-top: 7.5px;
+      color: #e9791a;
+      font-size: 1.2rem; }
