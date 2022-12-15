@@ -85,6 +85,8 @@ header {
                 // < 992px (Navegación común)
                 @include media('large'){
                     display: flex;
+                    flex-direction: row;
+                    
                 }
 
                     li {
